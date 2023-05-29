@@ -37,7 +37,7 @@ jobs:
           lfs: true
 
       - name: ☝️ Select UE${{ matrix.engine }}
-        shell: pwsh
+        shell: cmd
         run: |
           ue4 setroot "C:\UE\UE_${{ matrix.engine }}"
 
