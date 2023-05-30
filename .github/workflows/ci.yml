@@ -40,6 +40,8 @@ jobs:
         shell: cmd
         run: |
           ue4 setroot "C:\UE\UE_${{ matrix.engine }}"
+          
+          cd
 
           just set-engine ${{ matrix.engine }}
 
